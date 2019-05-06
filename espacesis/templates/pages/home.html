@@ -1,7 +1,32 @@
 {% extends "base.html" %}
 {% load static i18n %}
 
+{% block css %}
+
+    <style>
+        .jumbotron{
+            height: 100vh;
+            background-image: url("{% static 'images/q.png' %}");
+            background-size: cover;
+            background-position: top;
+            filter: blur(1);
+            
+        }
+    </style>
+
+{% endblock css%}
+
 {% block content %}
+
+<!-- Jumbotron -->
+<div class="jumbotron rounded-0">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+</div>
+
 <div class="py-2 rounded-0 mt-0 alert alert-info" role="alert">
   <div class="container">
       <h5 class="text-center">
@@ -17,12 +42,12 @@
     <div class="card shadow-md">
         <div class="text-center">
             <div class="mx-5 mt-5 mb-2">
-                <h2 class="font-weight-bold">{% trans 'Bienvenue au nouveau site d\'Espacesis !' %}</h2>
+                <h2 class="font-weight-bold">{% trans "Bienvenue au nouveau site d'Espacesis !" %}</h2>
             </div>
             <br>
             <div class="my-3 mb-5 mx-5">
                 <h4 class="lead font-weight-bold">
-                    {% trans 'It’s free and open source.' %}
+                    {% trans "It\’s free and open source." %}
                 </h4>
 
             </div>
