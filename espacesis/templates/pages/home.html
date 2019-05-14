@@ -6,7 +6,7 @@
     <style>
         .jumbotron{
             height: 100vh;
-            background-image: url("{% static 'images/q.png' %}");
+            background-image: url("{% static 'images/banner2-new.png' %}");
             background-size: cover;
             background-position: top;
             filter: blur(1);
@@ -20,11 +20,13 @@
 
 <!-- Jumbotron -->
 <div class="jumbotron rounded-0">
-  <h1 class="display-4">Hello, world!</h1>
-  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="container">
+          <h1 class="display-1 mt-5 text-primary font-weight-bold">Espacesis</h1>
+  <p class="lead"></p>
+  <hr class="my-4 bg-primary">
+  <p class="font-italic text-white display-4">Club des passionnés du code 👨🏽‍💻</p>
+  {% comment %} <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> {% endcomment %}
+    </div>
 </div>
 
 <div class="py-2 rounded-0 mt-0 alert alert-info" role="alert">
