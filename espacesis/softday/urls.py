@@ -5,7 +5,8 @@ from django.views import defaults as default_views
 
 from .views import Softday9
 
-app_name = "softday"
+app_name = "softdaypage"
+namespace = "softdaypage"
 
 
 urlpatterns = [
