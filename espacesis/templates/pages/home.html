@@ -4,7 +4,7 @@
 {% block css %}
 
     <style>
-        .jumbotron{
+        .jumbotron1{
             height: 100vh;
             background-image: url("{% static 'images/banner2-new.png' %}");
             background-size: cover;
@@ -19,7 +19,7 @@
 {% block content %}
 
 <!-- Jumbotron -->
-<div class="jumbotron mb-0 rounded-0">
+<div class="jumbotron jumbotron1 mb-0 rounded-0">
     <div class="container">
           <h1 class="display-1 mt-5 text-primary font-weight-bold">Espacesis</h1>
   <p class="lead"></p>
@@ -27,6 +27,15 @@
   <p class="font-italic text-white display-4">Club des passionnés du code</p>
   {% comment %} <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> {% endcomment %}
     </div>
+</div>
+
+<div class="jumbotron text-center mb-0">
+    <p class="font-weight-bold">SoftDay 9</p>
+    <h1 class="display-1 font-weight-bold py-5" style="color:#D9AD30">1000 $</h1>
+    <h4 class="font-weight-bold display-3">
+        Prix 
+        <a href="https://web.facebook.com/profile.php?id=100000533321663&ref=br_rs" target="_blank">Richard Sumuni</a>
+    </h4>
 </div>
 
 <div class="py-2 rounded-0 my-0 alert alert-info" role="alert">
@@ -77,28 +86,3 @@
 </div> -->
 
 {% endblock content %}
-
-{% block footer %}
-<div class="">
-    <div class="col-lg-12 bg-dark">
-        <div class="p-5 container">
-            <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12">
-                            <div class="">
-                                <img src="{% static 'images/2.png' %}" alt="" width="" height="56" srcset="">
-                            </div>
-                        </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="text-white text-center">
-                        <p>👨🏽‍💻 avec 💕 et ☕ par <a href="https://twitter.com/JeanlucKabulu" target="_blank">jeanluc Kabulu</a>!</p>
-                        <p class="font-weight-bold">N'hesitez pas de me payer une bonne 🍺</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-{% endblock footer %}
