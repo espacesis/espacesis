@@ -76,17 +76,29 @@
     </div>
 </div> -->
 
+{% endblock content %}
+
+{% block footer %}
 <div class="">
     <div class="col-lg-12 bg-dark">
         <div class="p-5 container">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="">
-                    <img src="{% static 'images/2.png' %}" alt="" width="" height="56" srcset="">
+            <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                            <div class="">
+                                <img src="{% static 'images/2.png' %}" alt="" width="" height="56" srcset="">
+                            </div>
+                        </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="text-white text-center">
+                        <p>👨🏽‍💻 avec 💕 et ☕ par <a href="https://twitter.com/JeanlucKabulu" target="_blank">jeanluc Kabulu</a>!</p>
+                        <p class="font-weight-bold">N'hesitez pas de me payer une bonne 🍺</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-
-{% endblock content %}
+{% endblock footer %}
