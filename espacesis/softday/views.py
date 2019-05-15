@@ -6,5 +6,5 @@ from django.views.generic import ListView, View
 class Softday9(View):
     
     def get(self, request):
-        # return render(HttpResponse("Hello"))
-        return HttpResponse("hellp")
+        return render(request, "pages/result.html")
+        
